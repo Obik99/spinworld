@@ -47,10 +47,10 @@
          otro elemento que se pueda ocultar al minimizar la barra -->
        <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
-              <li><a href="servicios.html">Quienes Somos</a></li>
-        <li><a href="clases.html">Clases y Horarios</a></li>
-        <li><a href="clientes.html">Clientes</a></li>
-		<li><a href="contacto.html">Contacto y Reservar Clase</a></li>
+             <li><a href="servicios.html">Quiénes somos</a></li>
+             <li><a href="clases.html">Clases y horarios</a></li>
+             <li><a href="clientes.html">Clientes</a></li>
+		     <li><a href="contacto.html">Contacto y reservar clase</a></li>
           </ul>
        </div>
     </nav>
@@ -59,33 +59,33 @@
       <div class="row" id="cont">
              <div class="col-md-1 col-lg-1 col-sm-1"></div>
              <div class="col-md-4 col-lg-4 col-sm-4">
-                   <p class="contacto-h1">VISITANOS</p>
+                   <p class="contacto-h1">VISÍTANOS</p>
                    <p class="contacto-p">
                    <img src="resources/images/iconos/icono_logo.png">&nbsp;SPIN WORLD GUANAJUATO<br>
                    <img src="resources/images/iconos/icono_direccion.png">&nbsp;Dirección: San Clemente #27 altos, Guanajuato, Gto.<br>
-                   <img src="resources/images/iconos/icono_email.png">&nbsp;Email: spinworldgto@hotmail.com contra:spinworld1<br>
+                   <img src="resources/images/iconos/icono_email.png">&nbsp;Email: spinworldgto@hotmail.com<br>
                    <img src="resources/images/iconos/icono_telefono.png">&nbsp;Teléfono: 473 108 7241
                    </p>
               </div>
              <div class="col-md-5 col-lg-5 col-sm-5">
                 <!-- NOMBRE -->
-                <form class="form-horizontal" role="form">
+                <form class="form-horizontal" role="form" name="contactform" method="post" action="enviar_email.php">
                    <p class="contacto-h1">CONTÁCTANOS</p>
                    <div class="form-group">
                    <div class="col-lg-12">
-                      <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                      <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" maxlength="50" >
                    </div>
                    </div>
                    <!-- EMAIL -->
                    <div class="form-group">
                    <div class="col-lg-12">
-                      <input type="email" class="form-control" id="email" placeholder="Email">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Email" maxlength="80">
                    </div>
                    </div>
                    <!-- ASUNTO -->
                    <div class="form-group">
                    <div class="col-lg-12">
-                      <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+                      <input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto" maxlength="80">
                    </div>
                    </div>
                    <!-- MENSAJE -->
